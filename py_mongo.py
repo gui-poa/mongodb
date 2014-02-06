@@ -1,7 +1,9 @@
 import pymongo
 
-client = pymongo.MongoClient("localhost", 27017)
-db = client.test
-print "nome %s" % db.name
+connection = pymongo.MongoClient("mongodb://guipoa:coursetest@ds027749.mongolab.com:27749/course")
+db = connection.course
 
+name = {"name":"guilherme"}
+
+db.names.insert(name);
 
