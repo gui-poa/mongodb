@@ -1,2 +1,2 @@
 #/bin/sh
-mongo ds027749.mongolab.com:27749/course -u guipoa -p coursetest
+mongo ds027779.mongolab.com:27779/m101 -u guipoa -p senhabanco
