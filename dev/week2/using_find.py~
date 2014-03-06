@@ -1,0 +1,4 @@
+import pymongo
+import sys
+connection = pymongo.MongoClient("mongodb://guipoa:coursetest@ds027779.mongolab.com:27779/m101")
+scores = connection.m101.scores
