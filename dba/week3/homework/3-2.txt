@@ -1,0 +1,4 @@
+O 3-2.js te da o numero total de elementos a serem resolvidos.
+A resposta final do exercicio eh db.zips.count() - resposta do js.
+
+29467-114=29353
