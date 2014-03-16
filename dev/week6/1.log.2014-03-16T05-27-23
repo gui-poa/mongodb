@@ -1,0 +1,41 @@
+Sun Mar 16 02:18:55.044 [initandlisten] MongoDB starting : pid=2528 port=27017 dbpath=/data/rs1 64-bit host=guilherme-VirtualBox
+Sun Mar 16 02:18:55.045 [initandlisten] db version v2.4.9
+Sun Mar 16 02:18:55.045 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Sun Mar 16 02:18:55.045 [initandlisten] build info: Linux ip-10-2-29-40 2.6.21.7-2.ec2.v1.2.fc8xen #1 SMP Fri Nov 20 17:48:28 EST 2009 x86_64 BOOST_LIB_VERSION=1_49
+Sun Mar 16 02:18:55.045 [initandlisten] allocator: tcmalloc
+Sun Mar 16 02:18:55.045 [initandlisten] options: { dbpath: "/data/rs1", fork: true, logpath: "1.log", oplogSize: 64, port: 27017, replSet: "m101", smallfiles: true }
+Sun Mar 16 02:18:55.239 [initandlisten] journal dir=/data/rs1/journal
+Sun Mar 16 02:18:55.240 [initandlisten] recover : no journal files present, no recovery needed
+Sun Mar 16 02:19:04.845 [initandlisten] preallocateIsFaster=true 65.8
+Sun Mar 16 02:19:14.282 [initandlisten] preallocateIsFaster=true 67.84
+Sun Mar 16 02:19:25.133 [initandlisten] preallocateIsFaster=true 74.94
+Sun Mar 16 02:19:25.133 [initandlisten] preallocateIsFaster check took 29.893 secs
+Sun Mar 16 02:19:25.133 [initandlisten] preallocating a journal file /data/rs1/journal/prealloc.0
+Sun Mar 16 02:19:28.941 [initandlisten] 		File Preallocator Progress: 104857600/134217728	78%
+Sun Mar 16 02:19:32.126 [initandlisten] preallocating a journal file /data/rs1/journal/prealloc.1
+Sun Mar 16 02:19:35.112 [initandlisten] 		File Preallocator Progress: 104857600/134217728	78%
+Sun Mar 16 02:19:35.596 [initandlisten] preallocating a journal file /data/rs1/journal/prealloc.2
+Sun Mar 16 02:19:39.608 [FileAllocator] allocating new datafile /data/rs1/local.ns, filling with zeroes...
+Sun Mar 16 02:19:39.608 [FileAllocator] creating directory /data/rs1/_tmp
+Sun Mar 16 02:19:39.854 [FileAllocator] done allocating datafile /data/rs1/local.ns, size: 16MB,  took 0.133 secs
+Sun Mar 16 02:19:39.934 [FileAllocator] allocating new datafile /data/rs1/local.0, filling with zeroes...
+Sun Mar 16 02:19:40.099 [FileAllocator] done allocating datafile /data/rs1/local.0, size: 16MB,  took 0.163 secs
+Sun Mar 16 02:19:40.214 [initandlisten] command local.$cmd command: { create: "startup_log", size: 10485760, capped: true } ntoreturn:1 keyUpdates:0  reslen:37 693ms
+Sun Mar 16 02:19:40.216 [initandlisten] ERROR: listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+Sun Mar 16 02:19:40.217 [initandlisten] ERROR:   addr already in use
+Sun Mar 16 02:19:40.217 [initandlisten] now exiting
+Sun Mar 16 02:19:40.217 dbexit: 
+Sun Mar 16 02:19:40.217 [initandlisten] shutdown: going to close listening sockets...
+Sun Mar 16 02:19:40.217 [initandlisten] shutdown: going to flush diaglog...
+Sun Mar 16 02:19:40.217 [initandlisten] shutdown: going to close sockets...
+Sun Mar 16 02:19:40.217 [initandlisten] shutdown: waiting for fs preallocator...
+Sun Mar 16 02:19:40.217 [initandlisten] shutdown: lock for final commit...
+Sun Mar 16 02:19:40.217 [initandlisten] shutdown: final commit...
+Sun Mar 16 02:19:40.218 [websvr] ERROR: listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:28017
+Sun Mar 16 02:19:40.218 [websvr] ERROR:   addr already in use
+Sun Mar 16 02:19:40.976 [initandlisten] shutdown: closing all files...
+Sun Mar 16 02:19:40.977 [initandlisten] closeAllFiles() finished
+Sun Mar 16 02:19:40.977 [initandlisten] journalCleanup...
+Sun Mar 16 02:19:40.977 [initandlisten] removeJournalFiles
+Sun Mar 16 02:19:41.221 [initandlisten] shutdown: removing fs lock...
+Sun Mar 16 02:19:41.221 dbexit: really exiting now
