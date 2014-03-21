@@ -1,0 +1,24 @@
+> db.messages.aggregate({$match : {"headers.From":"susan.mara@enron.com"}},{$unwind: "$headers.To"},{$group: {_id: '$_id', data: {$addToSet: '$headers.To'}}},{$unwind: "$data"},{$match:{"data":"jeff.dasovich@enron.com"}},{$group: {_id:null,total:{$sum:1}}})
+{ "result" : [ { "_id" : null, "total" : 750 } ], "ok" : 1 }
+
+
+> db.messages.aggregate({$match : {"headers.From":"susan.mara@enron.com"}},{$unwind: "$headers.To"},{$group: {_id: '$_id', data: {$addToSet: '$headers.To'}}},{$unwind: "$data"},{$match:{"data":"richard.shapiro@enron.com"}},{$group: {_id:null,total:{$sum:1}}})
+{ "result" : [ { "_id" : null, "total" : 616 } ], "ok" : 1 }
+
+
+> db.messages.aggregate({$match : {"headers.From":"soblander@carrfut.com"}},{$unwind: "$headers.To"},{$group: {_id: '$_id', data: {$addToSet: '$headers.To'}}},{$unwind: "$data"},{$match:{"data":"soblander@carrfut.com"}},{$group: {_id:null,total:{$sum:1}}})
+{ "result" : [ { "_id" : null, "total" : 679 } ], "ok" : 1 }
+
+
+> db.messages.aggregate({$match : {"headers.From":"susan.mara@enron.com"}},{$unwind: "$headers.To"},{$group: {_id: '$_id', data: {$addToSet: '$headers.To'}}},{$unwind: "$data"},{$match:{"data":"james.steffes@enron.com"}},{$group: {_id:null,total:{$sum:1}}})
+{ "result" : [ { "_id" : null, "total" : 646 } ], "ok" : 1 }
+
+
+> db.messages.aggregate({$match : {"headers.From":"evelyn.metoyer@enron.com"}},{$unwind: "$headers.To"},{$group: {_id: '$_id', data: {$addToSet: '$headers.To'}}},{$unwind: "$data"},{$match:{"data":"kate.symes@enron.com"}},{$group: {_id:null,total:{$sum:1}}})
+{ "result" : [ { "_id" : null, "total" : 567 } ], "ok" : 1 }
+
+
+> db.messages.aggregate({$match : {"headers.From":"susan.mara@enron.com"}},{$unwind: "$headers.To"},{$group: {_id: '$_id', data: {$addToSet: '$headers.To'}}},{$unwind: "$data"},{$match:{"data":"alan.comnes@enron.com"}},{$group: {_id:null,total:{$sum:1}}})
+{ "result" : [ { "_id" : null, "total" : 550 } ], "ok" : 1 }
+
+
